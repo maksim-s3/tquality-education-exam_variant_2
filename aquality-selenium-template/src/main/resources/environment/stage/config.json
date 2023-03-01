@@ -1,0 +1,4 @@
+{
+  "startUrl": "http://%s:%s@localhost:8081/web/",
+  "apiUrl": "http://localhost:8081/api/"
+}
