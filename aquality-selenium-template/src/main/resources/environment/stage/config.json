@@ -1,4 +1,6 @@
 {
-  "startUrl": "http://%s:%s@localhost:8081/web/",
-  "apiUrl": "http://localhost:8081/api/"
+  "startUrl": "http://localhost:8080/web/",
+  "apiUrl": "http://localhost:8080/api/",
+  "login": "",
+  "password": ""
 }

@@ -1,6 +1,6 @@
 package aquality.selenium.template.custom_elements;
 
-public enum TableTestsHeadings {
+public enum TableTestsHeaders {
     TEST_NAME("Test name"),
     TEST_METHOD("Test method"),
     LATEST_TEST_RESULT("Latest test result"),
@@ -10,10 +10,11 @@ public enum TableTestsHeadings {
 
     private final String title;
 
-    TableTestsHeadings(String title) {
+    TableTestsHeaders(String title) {
         this.title = title;
     }
 
+    @Override
     public String toString(){
         return title;
     }

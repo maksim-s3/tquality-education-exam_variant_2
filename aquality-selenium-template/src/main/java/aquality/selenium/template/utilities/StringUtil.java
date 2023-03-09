@@ -1,5 +1,8 @@
 package aquality.selenium.template.utilities;
 
+import lombok.experimental.UtilityClass;
+
+@UtilityClass
 public class StringUtil {
     private static final String REGEX_SELECT_NUMBERS = "[^0-9]+";
 

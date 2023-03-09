@@ -8,7 +8,6 @@ public enum RequestParams {
     TEST_NAME("testName"),
     METHOD_NAME("methodName"),
     ENV("env"),
-    START_TIME("startTime"),
     BROWSER("browser"),
     TEST_ID("testId"),
     STATUS("status"),
@@ -20,6 +19,7 @@ public enum RequestParams {
         this.title = title;
     }
 
+    @Override
     public String toString(){
         return title;
     }

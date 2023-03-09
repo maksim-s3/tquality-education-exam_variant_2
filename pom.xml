@@ -24,6 +24,7 @@
     <properties>
         <aspectj.version>1.9.7</aspectj.version>
         <restassured.version>5.3.0</restassured.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <data.provider.thread.count>4</data.provider.thread.count>
     </properties>
 
@@ -126,14 +127,7 @@
                     <parallel>classes</parallel>
                     <reuseForks>false</reuseForks>
                     <testFailureIgnore>false</testFailureIgnore>
-                    <systemPropertyVariables>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <login>${env.LOGIN}</login>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <password>${env.PASSWORD}</password>
-                    </systemPropertyVariables>
                     <suiteXmlFiles>
-                        <!--suppress UnresolvedMavenProperty -->
                         <suiteXmlFile>src/test/resources/TestSuit.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <argLine>
@@ -160,9 +154,6 @@
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
                 <version>2.10.0</version>
-                <configuration>
-                    <reportDirectory>${basedir}aquality-selenium-template/target/allure-results</reportDirectory>
-                </configuration>
             </plugin>
         </plugins>
     </build>

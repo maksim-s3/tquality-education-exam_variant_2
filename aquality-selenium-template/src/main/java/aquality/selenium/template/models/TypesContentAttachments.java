@@ -1,15 +1,15 @@
 package aquality.selenium.template.models;
 
-public enum ContentTypeAttachment {
-    CONTENT_TYPE_IMAGE("image/png"),
-    CONTENT_TYPE_TEXT("text/html");
+public enum TypesContentAttachments {
+    CONTENT_TYPE_IMAGE("image/png");
 
     private final String title;
 
-    ContentTypeAttachment(String title) {
+    TypesContentAttachments(String title) {
         this.title = title;
     }
 
+    @Override
     public String toString(){
         return title;
     }

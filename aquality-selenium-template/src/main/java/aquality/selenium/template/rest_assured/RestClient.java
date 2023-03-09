@@ -7,6 +7,7 @@ import static io.restassured.RestAssured.given;
 
 public class RestClient {
     private static final String BASE_URL = Configuration.getApiUrl();
+
     public static RequestSpecification getBaseSpec() {
         return given()
                 .baseUri(BASE_URL)
